@@ -1,59 +1,101 @@
-# Autonomous-Pest-Detection-Rover
-The Autonomous Pest-Detection Rover is a low-cost robotic system designed to help identify early signs of pest infestation or plant stress in agricultural environments. The rover navigates autonomously, monitors plant conditions, and alerts users when abnormal patterns are detected.
-Problem
+# 🌾 Autonomous Pest-Detection Rover
 
-Pests and plant diseases are often detected too late due to manual inspection, leading to reduced yields and environmental harm.
+## 🚀 Overview
+The **Autonomous Pest-Detection Rover** is a low-cost robotic system designed to help identify early signs of pest infestation or plant stress in crops. The rover autonomously navigates through plant rows, collects data, and alerts users to potential issues, supporting sustainable and efficient agriculture.
 
-Solution
+---
 
-Our rover:
+## ❓ Problem
+Pests and plant diseases are often detected too late through manual inspection, resulting in:
+- Crop damage
+- Reduced yield
+- Excessive pesticide use
 
-Navigates autonomously through plant rows
+This process is time-consuming and difficult to scale.
 
-Avoids obstacles using ultrasonic sensors
+---
 
-Monitors plant health using sensors
+## 💡 Solution
+Our rover automates plant monitoring by:
+- Navigating autonomously
+- Avoiding obstacles
+- Monitoring plant health using sensors
+- Optionally detecting pests using camera-based image analysis
 
-(Optional) Uses a camera and ML to detect pests
+Early detection allows faster and more targeted intervention.
 
-It provides early alerts so farmers can act quickly.
+---
 
-Tech Stack
+## ⚙️ System Architecture
+- **Raspberry Pi Pico H**
+  - Motor control
+  - Sensor data collection
+  - Obstacle avoidance
 
-Raspberry Pi Pico H – motors, sensors, navigation
+- **Optional Raspberry Pi 3/4**
+  - Camera input
+  - Image processing
+  - ML-based pest detection
 
-Optional Raspberry Pi 3/4 – camera & ML inference
+---
 
-Ultrasonic, soil moisture, temperature sensors
+## 🧰 Hardware Used
+- Raspberry Pi Pico H  
+- (Optional) Raspberry Pi 3 / 4  
+- Rover chassis with DC motors  
+- Motor driver (L298N / TB6612)  
+- Ultrasonic sensors  
+- Soil moisture sensor  
+- Battery pack  
+- Camera module (optional)
 
-Demo
+---
 
-Rover moves autonomously
+## 🧠 Software Stack
+- MicroPython / C++ (Pico H)
+- Python (Raspberry Pi)
+- OpenCV (optional)
+- TensorFlow Lite (optional)
 
-Stops near plants
+---
 
-Detects stress or pest indicators
+## 🤖 How It Works
+1. Rover moves autonomously along a predefined path  
+2. Ultrasonic sensors detect obstacles  
+3. Plant data is collected at regular intervals  
+4. System analyzes sensor data (and images if enabled)  
+5. Alerts are generated when abnormalities are detected  
 
-Displays results via LEDs or dashboard
+---
 
-Impact
+## 🎥 Demo
+- Autonomous navigation
+- Plant stress detection using sensors
+- Optional image-based pest detection
+- Live or recorded output
 
-Supports sustainable agriculture
+---
 
-Reduces pesticide overuse
+## 💰 Budget
+- 
+- **Full version (camera + ML):** $105–150  
 
-Affordable and scalable solution
+---
 
-Budget
+## 🌱 Impact
+- Encourages sustainable farming
+- Reduces pesticide overuse
+- Enables early pest detection
+- Affordable and scalable
 
-$60–90 (sensor-based)
+---
 
-$105–150 (camera + ML)
+## 🔮 Future Improvements
+- Advanced pest classification models
+- GPS-based field mapping
+- Cloud analytics dashboard
+- Automated targeted spraying
+- Multi-rover coordination
 
-Future Work
+---
 
-Advanced pest classification
-
-GPS field mapping
-
-Automated targeted spraying
